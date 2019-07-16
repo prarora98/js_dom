@@ -9,8 +9,14 @@
   <body>
     <body>
       <h1>Document Object Model</h1>
+      <div></div>
     <script>
-      // your code goes here
+      var p = document.createElement('p');
+      p.innerText=`Hello Javascript!`;
+      p.innerHTML='I love <strong>Javascript</strong>'
+      var ul= document.createElement('ul');
+      ul.appendChild(document.createElement('li').innerText='Buy groceries');
+      document.querySelector('body').append(ul);
     </script>
   </body>
 </html>

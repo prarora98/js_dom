@@ -12,5 +12,21 @@
       <li>Favorites: <span id="favorites"></span></li>
       <li>Hometown: <span id="hometown"></span></li>
     </ul>
+    <script>
+      var body = document.querySelector("body");
+      body.style.fontFamily = "arial,sans-serif";
+      document.getElementById("nickname").innerText = "Prateek";
+      document.getElementById("favorites").innerText = "Food";
+      document.getElementById("hometown").innerText = "Alwar, Rajasthan";
+      var li = document.querySelectorAll("ul>li");
+      [...li].forEach(l => {
+        l.classList.add("listitem");
+        l.style.color = "red";
+      });
+      var img = document.createElement("img");
+      img.src =
+        "https://casscommunity3.files.wordpress.com/2017/06/yahoo-logo.png";
+      body.appendChild(img);
+    </script>
   </body>
 </html>
