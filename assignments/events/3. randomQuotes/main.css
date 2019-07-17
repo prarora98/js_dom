@@ -1,0 +1,14 @@
+.mid {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.quote {
+  font-size: 30px;
+}
+.author {
+  font-size: 20px;
+  color: rgb(27, 27, 27);
+}
