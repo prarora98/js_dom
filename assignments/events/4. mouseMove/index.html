@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .box {
+        border: 3px solid lightgreen;
+        height: 70vh;
+        width: 30vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Move Mouse Cursor</h1>
+      <h3 class="scrx"></h3>
+      <h3 class="scry"></h3>
+      <h3 class="clix"></h3>
+      <h3 class="cliy"></h3>
+    </div>
+    <script>
+      var x = document.querySelector(".scrx");
+      var y = document.querySelector(".scry");
+      var clix = document.querySelector(".clix");
+      var cliy = document.querySelector(".cliy");
+      document.addEventListener("mousemove", e => {
+        x.innerText = e.screenX;
+        y.innerText = e.screenY;
+        clix.innerText = e.clientX;
+        cliy.innerText = e.clientY;
+      });
+    </script>
+  </body>
+</html>
